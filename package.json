@@ -2,6 +2,7 @@
   "name": "myapp",
   "version": "0.0.1",
   "dependencies": {
-    "express": "1.0.0"
+    "express": "1.0.0",
+    "beanstalk_client": "0.2.0"
   }
 }
