@@ -6,7 +6,7 @@ var restclient = require('./restclient/restclient');
 send_sms = function(args, finish) {
   url = process.env.MOONSHADOSMS_URL;
   if (url) {
-    restclient.POST(process.env.MOONSHADOSMS_URL + "/sms",
+    restclient.post(process.env.MOONSHADOSMS_URL + "/sms",
       { 'sms[device_address]': args.mobile_number, 'sms[message]': args.msg },
       function(res) {
         console.log("Got response: " + res);
